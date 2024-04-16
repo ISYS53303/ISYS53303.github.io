@@ -1,0 +1,134 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7; /* Neutral background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container for centered alignment */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff; /* White background for content */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Header styles */
+header {
+    background-color: #9d2235; /* Cardinal */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Razorbacks logo styles */
+header .razorback-logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 15%; /* Logo width as a percentage of the viewport width */
+    max-width: 200px; /* Maximum size the logo can be */
+    min-width: 100px; /* Minimum size the logo can be */
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 120px; /* Make room for the logo */
+    font-size: 2.5em;
+}
+
+/* Styling for section titles */
+section h2 {
+    color: #9d2235; /* Cardinal */
+    border-bottom: 3px solid #9d2235;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Section styling for spacing and background */
+section {
+    background-color: #fff; /* White background for sections */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* List styles for assignments */
+.assignments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.assignments li {
+    background-color: #eee; /* Light gray to contrast with white background */
+    margin-top: 10px;
+    padding: 15px;
+    border-left: 5px solid #9d2235; /* Cardinal accent on the side */
+    border-radius: 8px;
+}
+
+.assignments li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.assignments li a:hover {
+    color: #9d2235; /* Cardinal */
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header .razorback-logo {
+        left: 50%; /* Center the logo */
+        transform: translate(-50%, -50%); /* Adjust for centered logo */
+        width: 20%; /* Increase the size percentage for smaller screens */
+        max-width: 150px; /* Adjust max-width for smaller screens */
+    }
+    
+    header h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+        padding-left: 0; /* Remove padding when logo is centered */
+        padding-top: 60px; /* Make room for the logo above the title */
+    }
+    
+    .container {
+        width: 95%; /* Increase width for small screens */
+        margin: 10px auto; /* Decrease margin for small screens */
+    }
+    
+    section {
+        padding: 15px; /* Decrease padding for small screens */
+    }
+    
+    section h2 {
+        font-size: 1.3em; /* Adjust section title font size for small screens */
+    }
+    
+    .assignments li {
+        padding: 10px; /* Decrease padding for list items */
+    }
+}
+
+/* Even smaller devices, such as phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for very small screens */
+    }
+    
+    section h2 {
+        font-size: 1.2em; /* Adjust section title font size for very small screens */
+    }
+}
